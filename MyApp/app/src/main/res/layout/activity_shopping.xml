@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:tools="http://schemas.android.com/tools"
+android:background="#f2f3f8"
+android:orientation="vertical"
+tools:context=".ui.activity.ShoppingActivity">
+<include layout="@layout/commom_toolbar"/>
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:orientation="vertical">
+
+    <com.youth.banner.Banner
+        android:id="@+id/id_banner"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#33000000">
+        <!-- 标题-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="left"
+            android:id="@+id/loop_dec"/>
+        <!-- 小圆点-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_dots_loop"
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:layout_marginRight="10dp"
+            android:padding="10dp">
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="330dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/yydg"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="60dp"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/yydg"
+            android:text="预约代购"
+            android:textSize="20sp"
+            android:onClick="onClick"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/wddd"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_toRightOf="@+id/yydg"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/wddd"
+            android:text="我的订单"
+            android:textSize="20sp"
+            android:onClick="onClick"
+            android:textColor="@color/black"/>
+
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="510dp"
+    android:orientation="horizontal">
+    <Button
+        android:id="@+id/tcdg"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="60dp"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/tcdg"
+        android:text="同城代购"
+        android:textSize="20sp"
+        android:onClick="onClick"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/dshy"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_toRightOf="@+id/tcdg"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/dsh"
+        android:text="待收货"
+        android:textSize="20sp"
+        android:onClick="onClick"
+        android:textColor="@color/black"/>
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#f2f3f8"
+    android:orientation="vertical"
+    tools:context="ui.activity.LoginActivity">
+    <include layout="@layout/commom_toolbar"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="675dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="227dp"
+            android:layout_gravity="top"
+            android:orientation="vertical"
+            android:gravity="top">
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/medical" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_gravity="bottom"
+            android:layout_margin="25dp"
+            android:background="@color/white"
+            android:gravity="bottom"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left|top"
+                android:padding="30dp"
+                android:text="中国医科大学附属第一医院是一所大型综合性三级甲等医院，也是一所具有光荣革命传统的医院。医院诞生于二十世纪初，经过几代人艰苦卓绝的努力，医院不断发展壮大。1995年初，医院首创“以病人为中心”的服务理念，开城市大医院改革之先河，医院的改革经验被推向了全国，成为全国卫生战线的一面旗帜，对我国的医疗改革和医院管理产生了划时代的深远影响。20余年来，“以病人为中心”的理念一直被政府倡导和全国医院践行着，在我院的发展和建设中发挥着巨大的作用。
+
+       进入21世纪后，医院进入了新的历史发展阶段，如今的中国医大一院以人才实力和技术优势，发展成为国内外知名的东北地区疑难急重症诊治中心，委省共建国家区域医疗中心，在国内外卫生界享有很高的声誉，在2021年度全国三级公立医院绩效考核中，医院排名全国第13名，进入最高等级A++序列；2022年发布的复旦版《中国医院排行榜》中，医院综合排名全国第16名，连续13年位居东北首位。
+
+       医院现有国家重点学科4个，国家重点（培育）学科1个，国家临床重点专科建设项目25项，国家临床医学研究中心1个。在复旦版《专科声誉排行榜》中，医院有22个专科榜上有名，8个专科进入全国前10名，检验科自榜单发布以来连续八年全国第一。"
+                android:textColor="@color/black"
+                android:textSize="17sp"/>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!--    <fragment-->
+    <!--        android:id="@+id/fragment"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:name="com.example.app.Fragment1"/>-->
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        >
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/image1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/bottom1"
+            android:minWidth="0dp"
+            android:text="首页"
+            android:textColor="@color/black" />
+        <Button
+            android:id="@+id/image2"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:minWidth="0dp"
+            android:text="我的"
+            android:layout_toRightOf="@+id/image1"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/bottom2"/>
+        <Button
+            android:id="@+id/image3"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:minWidth="0dp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/image2"
+            android:drawableTop="@drawable/bottom3"/>
+        <Button
+            android:id="@+id/image4"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:minWidth="0dp"
+            android:layout_toRightOf="@+id/image3"
+            android:background="@android:color/transparent"
+            android:text="消息"
+            android:textColor="@color/black"
+            android:drawableTop="@drawable/bottom4"/>
+        <Button
+            android:id="@+id/image5"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:minWidth="0dp"
+            android:layout_toRightOf="@+id/image4"
+            android:background="@android:color/transparent"
+            android:text="设置"
+            android:textColor="@color/black"
+            android:drawableTop="@drawable/bottom5"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

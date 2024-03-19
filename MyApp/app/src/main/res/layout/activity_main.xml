@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#f2f3f8"
+    android:orientation="vertical"
+    tools:context=".ui.activity.MainActivity">
+    <include layout="@layout/commom_toolbar"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical">
+
+        <com.youth.banner.Banner
+            android:id="@+id/id_banner"
+            android:layout_marginTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="#33000000">
+            <!-- 标题-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="left"
+                android:id="@+id/loop_dec"/>
+            <!-- 小圆点-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_dots_loop"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:layout_marginRight="10dp"
+                android:padding="10dp">
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="410dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/dianhualianxi"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/dianhualianxi"
+            android:text="电话联系"
+            android:onClick="onClick"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/daigoufuwu"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@+id/dianhualianxi"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/daigoufuwu"
+            android:text="代购服务"
+            android:onClick="onClick"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/huzhufuwu"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@+id/daigoufuwu"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/huzhufuwu"
+            android:text="互助服务"
+            android:onClick="onClick"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/jiuyifuwu"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@+id/huzhufuwu"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/jiuyifuwu"
+            android:text="就医服务"
+            android:onClick="onClick"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="310dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/danzuhuodong"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/danzuhuodong"
+            android:text="党组活动"
+            android:onClick="onClick"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/zhitongdaohe"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@+id/danzuhuodong"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/zhitongdaohe"
+            android:text="志同道合"
+            android:onClick="onClick"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/shipingliaotian"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@+id/zhitongdaohe"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/shipingliaotian"
+            android:text="视频聊天"
+            android:onClick="onClick"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/yijianzhaoji"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@+id/shipingliaotian"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/yijianzhaoji"
+            android:text="一键召集"
+            android:onClick="onClick"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="510dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/yulehuodong"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/yulehuodong"
+            android:text="娱乐活动"
+            android:onClick="onClick"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/jiankangjiance"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@+id/yulehuodong"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/jiankangjiance"
+            android:text="健康检测"
+            android:onClick="onClick"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/xinlizixun"
+            android:layout_width="105dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@+id/jiankangjiance"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/xinlizixun"
+            android:text="心理咨询"
+            android:onClick="onClick"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/jiankangshipu"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@+id/xinlizixun"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/jiankangshipu"
+            android:text="健康食谱"
+            android:onClick="onClick"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="@color/white">
+
+        <Button
+            android:id="@+id/image1"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/bottom1"
+            android:minWidth="0dp"
+            android:text="首页"
+            android:textColor="@color/black" />
+        <Button
+            android:id="@+id/image2"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:minWidth="0dp"
+            android:text="我的"
+            android:layout_toRightOf="@+id/image1"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/bottom2"/>
+        <Button
+            android:id="@+id/image3"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:minWidth="0dp"
+            android:background="@android:color/transparent"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/image2"
+            android:drawableTop="@drawable/bottom3"/>
+        <Button
+            android:id="@+id/image4"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:minWidth="0dp"
+            android:layout_toRightOf="@+id/image3"
+            android:background="@android:color/transparent"
+            android:text="消息"
+            android:textColor="@color/black"
+            android:drawableTop="@drawable/bottom4"/>
+        <Button
+            android:id="@+id/image5"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:minWidth="0dp"
+            android:layout_toRightOf="@+id/image4"
+            android:background="@android:color/transparent"
+            android:text="设置"
+            android:textColor="@color/black"
+            android:drawableTop="@drawable/bottom5"/>
+
+    </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

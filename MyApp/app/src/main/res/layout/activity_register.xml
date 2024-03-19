@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f2f3f8"
+    android:orientation="vertical"
+    tools:context="ui.activity.RegisterActivity">
+    <include layout="@layout/commom_toolbar"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="227dp"
+        android:layout_gravity="top"
+        android:orientation="vertical"
+        android:gravity="top">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/denglu" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账&#12288;&#12288;号:"
+            android:textSize="25sp" />
+        <EditText
+            android:id="@+id/id_et_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            style="@style/Base.CardView"
+            android:hint="请输入用户名"
+            android:inputType="text" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="密&#12288;&#12288;码:"
+            android:textSize="25sp" />
+        <EditText
+            android:id="@+id/id_et_password"
+            style="@style/Base.CardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:hint="请输入密码"
+            android:inputType="numberPassword" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确认密码:"
+            android:textSize="25sp" />
+        <EditText
+            android:id="@+id/id_et_repassword"
+            style="@style/Base.CardView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:hint="再次输入密码"
+            android:inputType="numberPassword" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/id_btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="注册"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="30dp"
+        style="@style/button_large_yellow"/>
+
+    <CheckBox
+        android:id="@+id/cb_agree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="勾选即同意用户协议"
+        android:textColor="@color/black" />
+</LinearLayout>
